@@ -1,0 +1,27 @@
+{
+  "name": "api-instagran-angular",
+  "authors": [
+    "leandrofsp <leandrof.sp@gmail.com>"
+  ],
+  "description": "estudo angular requisitando a api do instagran",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "instagran"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "modernizer": "^2.8.2"
+  }
+}

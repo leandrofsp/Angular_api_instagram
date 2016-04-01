@@ -1,0 +1,5 @@
+node_modules
+.sass-cache
+assets/components
+assets/_js
+assets/_sass

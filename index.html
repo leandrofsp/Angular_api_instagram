@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app">
+<head>
+	<title>Api Instagran</title>
+	<script src="assets/components/modernizer/modernizr.js"></script>
+	<script src="assets/components/angular/angular.js"></script>
+	<script src="assets/components/jquery/dist/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/components/bootstrap/dist/css/bootstrap.css">
+	<link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body ng-controller="IndexCtrl as vm">
+ <h1>Tag: SPFC - Instagram</h1>
+
+ <img class="fotos" ng-repeat="media in vm.medias" ng-src="{{ media.images.thumbnail.url }}" alt="">
+
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
