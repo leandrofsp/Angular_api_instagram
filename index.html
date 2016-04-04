@@ -10,9 +10,30 @@
 </head>
 <body ng-controller="IndexCtrl as vm">
  <h1>Tag: SPFC - Instagram</h1>
+ <section>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-2" ng-repeat="media in vm.medias">
+		<figure>
+			 <img class="fotos" ng-src="{{ media.images.thumbnail.url }}" alt="">
+		 </figure>
+		 <div class="row">
+		 <div class="col-md-4">
+		 <figure>
+		 <img class="foto-perfil" ng-src="{{ media.user.profile_picture }}" alt="">
+		 </figure>
+		 </div>
+		 <div class="col-md-8">
+		<h4>{{media.user.username}}</h4>
+		</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</section>
 
- <img class="fotos" ng-repeat="media in vm.medias" ng-src="{{ media.images.thumbnail.url }}" alt="">
 
-   <script src="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
