@@ -13,21 +13,7 @@
  <section>
 	<div class="container">
 	<div class="row">
-		<div class="col-md-2" ng-repeat="media in vm.medias">
-		<figure>
-			 <img class="fotos" ng-src="{{ media.images.thumbnail.url }}" alt="">
-		 </figure>
-		 <div class="row">
-		 <div class="col-md-4">
-		 <figure>
-		 <img class="foto-perfil" ng-src="{{ media.user.profile_picture }}" alt="">
-		 </figure>
-		 </div>
-		 <div class="col-md-8">
-		<h4>{{media.user.username}}</h4>
-		</div>
-		</div>
-	</div>
+		<div pictures-wall pictures="vm.medias"></div>
 	</div>
 	</div>
 </section>
